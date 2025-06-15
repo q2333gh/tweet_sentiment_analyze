@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  spark-app:
+    build: .
+    container_name: tweet-analysis-container
+    ports:
+      - "8888:8888"  # JupyterLab UI
+      - "4040:4040"  # Spark UI
+    volumes:
+      - .:/home/jovyan/work # 将当前目录挂载到容器的工作目录
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - SPARK_OPTS=--driver-memory=16g --executor-memory=16g # 为Spark分配内存，32G内存可多分点 
