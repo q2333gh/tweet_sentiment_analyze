@@ -64,9 +64,26 @@ docker-compose up --build -d
 5. **主题建模** - 使用LDA提取主题
 6. **分类建模** - 训练情感分类模型
 
-## 下一步
+## 当前进度
 
-现在您可以：
-1. 访问 JupyterLab: http://localhost:8888
-2. 打开 `notebooks/1_data_ingestion_and_stats.ipynb`
-3. 开始运行第一个 notebook 来加载和探索数据 
+✅ **已完成**：
+1. **环境搭建** - Docker 容器和 Spark 环境
+2. **数据加载** - `1_data_ingestion_and_stats.ipynb` 
+3. **数据清洗** - `2_data_cleaning.ipynb`
+4. **EDA准备** - `3_eda_and_sentiment_analysis.ipynb` (已创建)
+
+🔄 **进行中**：
+- 探索性数据分析和情感分析
+
+⏭️ **下一步**：
+1. 运行 `notebooks/2_data_cleaning.ipynb` 进行数据清洗
+2. 运行 `notebooks/3_eda_and_sentiment_analysis.ipynb` 进行深度分析
+3. 创建主题建模和分类建模的 notebooks
+
+## 使用说明
+
+1. **访问 JupyterLab**: http://localhost:8888
+2. **按顺序运行 notebooks**：
+   - `1_data_ingestion_and_stats.ipynb` ✅ (已完成基础分析)
+   - `2_data_cleaning.ipynb` ⏭️ (下一步运行)
+   - `3_eda_and_sentiment_analysis.ipynb` ⏭️ (清洗完成后运行) 
