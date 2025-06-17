@@ -1,0 +1,27 @@
+# PySpark和大数据处理
+pyspark>=3.4.0
+
+# 数据处理和分析
+pandas>=1.5.0
+numpy>=1.21.0
+
+# 机器学习
+scikit-learn>=1.1.0
+
+# 情感分析
+vaderSentiment>=3.3.2
+
+# 可视化
+matplotlib>=3.5.0
+seaborn>=0.11.0
+wordcloud>=1.9.0
+
+# 数据存储
+pyarrow>=10.0.0  # for Parquet support
+
+# 工具库
+tqdm>=4.64.0
+
+# Jupyter (如果需要在notebook中运行)
+jupyter>=1.0.0
+ipykernel>=6.15.0 
